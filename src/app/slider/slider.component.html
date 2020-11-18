@@ -1,0 +1,16 @@
+
+<div class="flex justify-center my-3">
+  <input 
+    [(ngModel)]="valueBox" 
+    (input)="onChange($event.target.value)"
+    type="range" 
+    [min]="min"
+    [max]="max" class="mx-4">
+  <input 
+    type="number"
+    [min]="min" 
+    [max]="max"
+    (input)="onChange($event.target.value)"
+    [(ngModel)]="valueBox"
+    class="w-16 border-2 border-gray-600 outline-none">
+</div>

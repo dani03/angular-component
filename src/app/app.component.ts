@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sandBox';
+  allColors: Array<string> = [];
+  
+  getColor(oneColor):void{
+    this.allColors.push(oneColor);
+  }
 }

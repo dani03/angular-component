@@ -1,0 +1,11 @@
+<div class=" m-8 w-1/2 border-2 bg-gray-300 border-gray-500 py-8" >
+  <p class="mx-2 my-2">entrez du texte: {{ content }} </p>
+  <textarea [(ngModel)]="content" 
+  [class]="content.length > limitCaracters-2 ? 'borderRed' : '' "
+  class="borber-3 border-green-200 mx-2 outline-none  "
+  [maxLength]="limitCaracters"
+  cols="60" rows="5">
+  
+  </textarea>
+  <p class="mx-64"> {{ content.length }}/{{ limitCaracters }}</p>
+</div>

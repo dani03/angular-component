@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppCounterComponent } from './counterText/counter.component';
+import { FormsModule } from '@angular/forms';
+import { SliderComponent } from './slider/slider.component';
+import { BoxColorComponent } from './box-color/box-color.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppCounterComponent,
+    SliderComponent,
+    BoxColorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
